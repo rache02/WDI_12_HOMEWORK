@@ -1,0 +1,7 @@
+<h1>Food Failures</h1>
+
+<a href = '/dishes/new'>new dish</a>
+
+<% @dishes.each do |dish| %>
+  <a href="#"><img src="<%= dish['image_url'] %>" alt=""></a>
+<% end %>

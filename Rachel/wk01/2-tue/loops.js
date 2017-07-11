@@ -27,20 +27,18 @@ var suffix = ['st','nd','rd','th']
 }
 
 // // JS else if statements
-// var year = Number;
-//   if (year === 2015) {
-//     console.log('Im in the present!');
-//   } else if (year < 2015) {
-//     console.log('Whoa! Blast from the past!');
-//   } else (year > 2015) {
-//     console.log('Greetings from the future!');
-//   }
+// if the year is 2015 Im in the present
+// if before 2015 Whoa! Blast from the past!
+// if after 2015 Greetings form the future!
 
-// var year;
-// if (year === 2015) {
-//   console.log('Im in the present!');
-// } else if (year < 2015) {
-//   console.log('Whoa! Blast from the past!');
-// } else {
-//   console.log('Greetings from the future!');
-// }
+//if year truth 2015
+// else if truth 
+
+var year = ;
+if (year === 2015) {
+  console.log('Im in the present!');
+} else if (year < 2015) {
+  console.log('Whoa! Blast from the past!');
+} else {
+  console.log('Greetings from the future!');
+}
