@@ -33,7 +33,7 @@ document.querySelectorAll('h1')[1].textContent = 'Friend'
 
 var button = document.querySelectorAll('button')[0]
 var changeColor = function() {
-  document.querySelector('button').style.backgroundColor = "red"
+  document.querySelectorAll('div')[0].style.backgroundColor = "red"
 }
 button.addEventListener('click', changeColor)
 
@@ -64,7 +64,7 @@ var favouriteColor = document.getElementById('favCol').value
 // </html>
 // ```
 
-$( "div" ).append( $( "p" ) )
+$( "div" ).append( $( "<p>" ) )
 
 // (6.) Write the necessary code to figure out how many list items are in the ul tag below:
 //

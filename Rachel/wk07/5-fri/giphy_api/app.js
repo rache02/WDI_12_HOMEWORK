@@ -10,7 +10,8 @@ $('form').submit(function(event) {
     data: {
       api_key: 'd9807d778cd44cec98f3de770feb582f',
       q: phrase,
-      limit: 10
+      limit: 10,
+      offset: 0
     }
   }
 

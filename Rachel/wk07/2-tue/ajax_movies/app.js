@@ -8,22 +8,23 @@ $btn.on('click', function(event) {
   console.log('its working');
 
   // var movieName = document.querySelector('input').value;
-  var $movieName = $('input').val();
+  var movieName = $('input').val();
 // var search = "http://omdbapi.com/?s=sharknado&apikey=2f6435d9"
 
   // var search = url:"http://omdbapi.com/?t="+movieName+"&apikey=2f6435d9"
   var search = {
     url:"http://omdbapi.com/",
     data: {
-      s: $movieName,
+      s: movieName,
       apikey: '2f6435d9'
       }
     }
 
   $.ajax(search).done(function(response) {
     console.log(response);
-    debugger
-    for (var i = 0; i < response.length; i++) {
+
+    for (var i = 0; i < .length; i++) {
+      debugger
       var newMovie = document.createElement('div');
       newMovie.textContent = response.Title;
       document.querySelector('.response').appendChild(newMovie)
