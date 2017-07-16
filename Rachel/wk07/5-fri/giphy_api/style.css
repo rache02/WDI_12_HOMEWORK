@@ -1,0 +1,40 @@
+body {
+  background-color: black;
+}
+
+form {
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  padding-top: 5%
+}
+
+input {
+
+}
+
+button {
+  font-size: 20px;
+  background-color: white;
+  color: black;
+  border-radius: 15%;
+  box-shadow: 0 3px 0 0 grey;
+}
+
+.results {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+img {
+  height: 50%%;
+  width: 50%;
+  padding-left: 25%;
+  padding-top: 50px;
+}
