@@ -19,6 +19,7 @@ $('form').submit(function(event) {
 
   $(window).scroll(function() {
     if($(window).scrollTop() == $(document).height() - $(window).height()) {
+      request.data.offset += 10;
       $('.results').append($.ajax(request).done(displayResults))
     }
   })
@@ -33,5 +34,4 @@ function displayResults(response) {
     // debugger
     $('.results').append(giphy)
   })
-
 }
