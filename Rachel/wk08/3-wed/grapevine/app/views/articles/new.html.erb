@@ -1,0 +1,31 @@
+<!--
+<form class="" action="/articles" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+
+  <label for="">Title</label>
+  <input type="text" name="" value="">
+
+  <label for="">Content</label>
+  <input type="text" name="" value="">
+
+  <label for="">Category</label>
+  <select class="" name="">
+    <option value=""></option>
+  </select>
+
+  <button>Create</button>
+</form> -->
+
+<%= form_tag '/articles', method: 'post' do %>
+
+  <label for="">Title</label>
+  <input type="text" name="title" value=  "">
+
+  <label for="">Content</label>
+  <textarea name="content" rows="8" cols="80"></textarea>
+
+  <label for="">Category</label>
+  <%= select_tag :category_id, options_from_collection_for_select(Category.all, :id, :name) %>
+
+  <button>Create</button>
+<% end %>
